@@ -9,13 +9,13 @@
  */
 int main(void)
 {
-	char low, e, q;
+	int i;
 
-	for (low = 'a'; low <= 'z'; low++)
+	for (i = 97; i < 123; i++)
 	{
 		if (low != e && low != q)
 		{
-			putchar(low);
+			putchar(i);
 		}
 	}
 	putchar('\n');
