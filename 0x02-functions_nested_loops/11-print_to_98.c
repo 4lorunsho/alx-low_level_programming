@@ -1,16 +1,35 @@
 #include "main.h"
+#include<stdio.h>
 
 /**
- * add - Adds two integers and returns
- * the result.
- *
- * @a: number one.
- * @b: number two.
- *
- * Return: Add of number one and number two.
+ * print_to_98 - prints all natural numbers from n to 98,
+ * followed by a new line
+ * @n: print from this number
  */
-int main(void)
+void print_to_98(int n)
 {
-	print_to_98(98);
-	return (0);
+	int i;
+
+	if (n < 98)
+	{
+		for (i = n; i < 98; i++)
+		{
+			printf("%d", i);
+			printf(",");
+			printf(" ");
+		}
+
+	}
+	else 
+	{
+		for (i = n; i > 98; i--)
+		{
+			printf("%d", i);
+			printf(",");
+			printf(" ");
+		}
+	}
+
+	printf("98\n");
+
 }
