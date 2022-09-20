@@ -21,8 +21,16 @@ int main(void)
 			if (e != i && e == 56)
 			{
 				putchar(e);
-				purchar(i);
+				putchar(i);
 				if (i == 57 && e == 56)
 				{
 					break;
 				}
+				putchar(e);
+				putchar(i);
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+}
