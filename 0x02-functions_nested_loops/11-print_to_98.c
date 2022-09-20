@@ -9,7 +9,8 @@
  *
  * Return: Add of number one and number two.
  */
-int add(int a, int b)
+int main(void)
 {
-	return (a + b);
+	print_to_98(98);
+	return (0);
 }
