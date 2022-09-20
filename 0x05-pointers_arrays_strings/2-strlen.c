@@ -1,23 +1,20 @@
+#include "main.h"
 #include <stdio.h>
+
 /**
  * _strlen - a function that returns the length of a string
  * @s: char input
- * an inputted number of bytes from src.
- * @dest: The string to be appended upon.
- * @src: The string to be appended to dest.
- * @n: The number of bytes from src to be appended to dest.
- *
  * Return: length of the input string
  */
-char *_strncat(char *dest, char *src, int n)
+int _strlen(char *s)
 {
-	int index = 0, dest_len = 0;
+	int i = 1, sum = 0;
+	char pl = s[0];
 
-	while (dest[index++])
-		dest_len++;
-
-	for (index = 0; src[index] && index < n; index++)
-		dest[dest_len++] = src[index];
-
-	return (0);
+	while (pl != '\0')
+	{
+		sum++;
+		pl = s[i++];
+	}
+	return (sum);
 }
