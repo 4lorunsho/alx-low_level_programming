@@ -21,8 +21,9 @@ int _strlen(char *str)
  * @p: possible palindrome
  *
  * Return: 1 if palindrome 0 if not
- * int check_palindrome(int l, int r, char *p)
  */
+
+int check_palindrome(int l, int r, char *p)
 {
 	if (l >= r)
 		return (1);
